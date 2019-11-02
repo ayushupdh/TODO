@@ -40,14 +40,14 @@ class App extends React.Component {
       })
     })
   }
-  dltfunc=()=>{
-    
+  dltfunc=(id)=>{
+    this.setState({todos: [...this.state.todos.filter(todo=>todo.id!==id)]});
   }
   render(){
     return (
     
       <div>
-      <h1>Hello, world!</h1>
+      <h1>My Todo List</h1>
       <Todo todo={this.state.todos} markComplete={this.markComplete} dltfunc= {this.dltfunc}/>
       </div>
   );
