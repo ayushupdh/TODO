@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Todo from './component/Todo'
+import Todo from './component/todo.js'
 
 class App extends React.Component {
  
@@ -18,12 +18,12 @@ class App extends React.Component {
       },
       {
         id:3,
-        title: 'Kick them out of the room',
+        title: 'No Dont do it',
         completed:false
       },
       {
         id:4,
-        title: 'Fuck them',
+        title: 'Lol Do it',
         completed:false
       }
     ]
